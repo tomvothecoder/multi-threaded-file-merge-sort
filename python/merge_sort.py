@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+##!/usr/bin/env python3
 import csv
 import os
 
@@ -65,25 +65,31 @@ def mergeSort(arr,l,r):
 
 
 def main():
-    results = []
-    with open("../dataset/data.csv") as csvfile:
+    # Whole row
+    results = [] 
+    largest = 0
+    with open("dataset/data.csv") as csvfile:
         reader = csv.reader(csvfile, delimiter = ",")
         for row in reader: # each row is a list
             results.append(row)
-            country = row['country']
+            # country = row['country']
 
-    print country
-""" 
-    print results """
+    n = len(results)
 
+    for i in range(n):
+        print("\nCurrent position: ", results[i][1])
+        if (int(results[i][1]) > largest):
+            largest = int(results[i][1])
+        print("Current largest", largest)
 
+    print(results)
+    
+    mergeSort(arr,0,n-1)
+    
 
 
 """   arr = [12, 11, 13, 5, 6, 7]
     n = len(arr)
-    print ("Given array is")
-    for i in range(n):
-        print ("%d" %arr[i]),
  
     mergeSort(arr,0,n-1)
     print ("\n\nSorted array is")
