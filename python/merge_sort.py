@@ -5,38 +5,43 @@ import csv
 import os
 import pandas as pd
 
-def mergeSort(alist):
-    # print("Splitting ", alist)
-    if len(alist) > 1:
-        mid = len(alist) // 2
+from timeit import default_timer as timer
+
+def merge_sort(alist):
+    print("Splitting ",alist)
+    if len(alist)>1:
+        mid = len(alist)//2
         lefthalf = alist[:mid]
         righthalf = alist[mid:]
 
-        mergeSort(lefthalf)
-        mergeSort(righthalf)
+        merge_sort(lefthalf)
+        merge_sort(righthalf)
 
-        i = 0
-        j = 0
-        k = 0
+
+    # Merge the temp arrays back into arr[l..r]
+
+        i=0 # Initial index of first subarray
+        j=0 # Initial index of second subarray
+        k=0 # Initial index of merged subarray
         while i < len(lefthalf) and j < len(righthalf):
             if lefthalf[i][1] < righthalf[j][1]:
-                alist[k] = lefthalf[i]
-                i = i + 1
+                alist[k]=lefthalf[i]
+                i=i+1
             else:
-                alist[k] = righthalf[j]
-                j = j + 1
-            k = k + 1
+                alist[k]=righthalf[j]
+                j=j+1
+            k=k+1
 
         while i < len(lefthalf):
-            alist[k] = lefthalf[i]
-            i = i + 1
-            k = k + 1
+            alist[k]=lefthalf[i]
+            i=i+1
+            k=k+1
 
         while j < len(righthalf):
-            alist[k] = righthalf[j]
-            j = j + 1
-            k = k + 1
-    # print("Merging ", alist)
+            alist[k]=righthalf[j]
+            j=j+1
+            k=k+1
+    print("Merging ",alist)
 
 
 def path_file(input_file):
@@ -53,46 +58,53 @@ def write_file(input_file, write_row):
 
 
 def main():
+    print("Merge Sort - CSV File\n")
+
     # Whole row
     results = []
     # largest = 0
 
-    with open("../dataset/factbook2.csv") as csvfile:
+
+    in_file = input("Enter CSV file name to sort: ") + ".csv"
+
+    with open("../dataset/" + in_file) as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
         next(reader)
         next(reader)
         for row in reader:  # each row is a list
             results.append(row)
             # country = row['country']
+    
+    # print(results)
 
     n = len(results)
 
-    # for i in range(n):
-    #     print("\nCurrent position: ", results[i][1])
-    #     if (int(results[i][1]) > largest):
-    #         largest = int(results[i][1])
-    #     print("Current largest", largest)
+# GET SERIAL TIME
+    start = timer()
 
+    print("\nPerforming merge sort on file: " +in_file)
+    merge_sort(results)
+
+    end = timer()
+    elapsed = end - start
+
+    print("Total time elapsed = " + str(elapsed) + "\n")
     # print(results)
 
-    # mergeSort(results, 0, n - 1)
-    # mergeSort(results)
-    # print(results)
 
-    print("Merge Sort - CSV File\n")
 
-    file_name = input("Enter CSV file name: ") + ".csv"
-    print("Saved as: ", file_name)
-    print("\tCSV file found at:" + path_file(file_name))
+    out_file = input("Enter CSV file name: ") + ".csv"
+    print("Saved as: ", out_file)
+    print("\tCSV file found at:" + path_file(out_file))
 
-    # write_file(file_name, results)
+    # write_file(out_file, results)
 
     my_df = pd.DataFrame(results)
-    my_df.columns =["Country", "Death rate(deaths/1000 population)" ,"GDP"]
-    my_df.to_csv('../dataset/' + file_name, index=False)
+    # my_df.columns = ["Country", "Death rate(deaths/1000 population)", "GDP"]
+    my_df.to_csv('dataset/' + out_file, index=False)
 
     print(my_df)
-
+    
 
 
 if __name__ == "__main__":
