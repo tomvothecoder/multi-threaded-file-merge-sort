@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+__author__ = "Tom Vo"
+__version__ = "0.1.0"
+
 import math
 import multiprocessing
 import random
@@ -15,27 +19,18 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as plticker
 
 def main():
-    # size = int(sys.argv[-1]) if sys.argv[-1].isdigit() else 1000
-    # data_unsorted = [random.randint(0, size) for _ in range(size)]
-    # for sort in merge_sort, merge_sort_parallel:
-    #     start = time.time()
-    #     data_sorted = sort(data_unsorted)
-    #     end = time.time() - start
-    # print (sort.__name__, end, sorted(data_unsorted) == data_sorted)
 
     print("Merge Sort - CSV File\n")
 
-    # comm_sz = int(sys.argv[1])
     numProc = multiprocessing.cpu_count()
     print("Number of processors available on system: " + str(numProc))
    
-    comm_sz = int(input("Enter number of workers per processor: "))
-
-    # print("Number of workers/processor selected: ", comm_sz)
+    comm_sz = int(input("Enter number of workers (processors): "))
 
     # List used to store CSV (unsorted)
     csv_list = []
- # Read in the unsorted CSV file
+    
+    # Read in the unsorted CSV file
     in_file = input("\nEnter unsorted CSV file name to sort: ") + ".csv"
     
     pd.set_option('display.width', 120)
@@ -78,14 +73,13 @@ def main():
     print("Saved as: ", out_file)
     print("\tCSV file found at:" + path_file(out_file))
 
-# Export to output csv using pandas
+    # Export to output csv using pandas
     write_file_pandas(par_list, out_file)
     plotter(out_file)
 
-
 def merge(*args):
-    # Support explicit left/right args, as well as a two-item
-    # tuple which works more cleanly with multiprocessing.
+    # Support explicit left/right args 
+    # Two item tuple-> works cleanly with multiprocessing.
     left, right = args[0] if len(args) == 1 else args
     left_length, right_length = len(left), len(right)
     left_index, right_index = 0, 0
@@ -118,12 +112,10 @@ def merge_sort(data):
 
 # PARALLEL MERGE_SORT
 def merge_sort_parallel(data, processes):
+
     # Creates a pool of worker processes depending on user input.
     # Split the unsorted dataset into partitions evenly among workers
     # Perform a local merge sort across each partition.
-
-    # numProc = multiprocessing.cpu_count()
-    # print("Number of processors available: " + str(numProc))
    
     pool = multiprocessing.Pool(processes=processes)
 
@@ -169,7 +161,6 @@ def plotter(input_file):
     # locator.MAXTICKS = 10000
 
     ax.scatter(x, y)
-#    ax.plot(x, y, label="Census statistics, Death Rate vs. GDP")
     plt.xlabel('Unemployment rate(%)')
     plt.ylabel('Death rate(deaths/1000 population)')
 
@@ -198,6 +189,7 @@ def write_file_pandas(arr, out_file):
     print(my_df)
 
 
+# NOT USED, pandas functions preferred
 def read_file_list(arr, in_file):
     with open("../input_dataset/" + in_file) as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
@@ -207,7 +199,7 @@ def read_file_list(arr, in_file):
             arr.append(row)
             # country = row['country']
 
-
+# NOT USED, pandas functions preferred
 def write_file(input_file, write_row):
     with open(os.path.join('../output_dataset/', input_file), 'a') as file:
         writer = csv.writer(file)
