@@ -56,6 +56,16 @@ def write_file(input_file, write_row):
         writer = csv.writer(file)
         writer.writerow([write_row])
 
+def read_file_list(arr, in_file):
+
+    with open("dataset/" + in_file) as csvfile:
+        reader = csv.reader(csvfile, delimiter=",")
+        next(reader)
+        next(reader)
+        for row in reader:  # each row is a list
+            arr.append(row)
+            # country = row['country']
+
 
 def main():
     print("Merge Sort - CSV File\n")
@@ -67,13 +77,7 @@ def main():
 
     in_file = input("Enter CSV file name to sort: ") + ".csv"
 
-    with open("../dataset/" + in_file) as csvfile:
-        reader = csv.reader(csvfile, delimiter=",")
-        next(reader)
-        next(reader)
-        for row in reader:  # each row is a list
-            results.append(row)
-            # country = row['country']
+    read_file_list(results, in_file)
     
     # print(results)
 
@@ -91,8 +95,6 @@ def main():
     print("Total time elapsed = " + str(elapsed) + "\n")
     # print(results)
 
-
-
     out_file = input("Enter CSV file name: ") + ".csv"
     print("Saved as: ", out_file)
     print("\tCSV file found at:" + path_file(out_file))
@@ -101,7 +103,7 @@ def main():
 
     my_df = pd.DataFrame(results)
     # my_df.columns = ["Country", "Death rate(deaths/1000 population)", "GDP"]
-    my_df.to_csv('dataset/' + out_file, index=False)
+    my_df.to_csv('/dataset/' + out_file, index=False)
 
     print(my_df)
     
