@@ -18,7 +18,7 @@ scipy
 ```
 
 
-![Alt text](/output_dataset/factbook_out_csv.png?raw=true "Generated plot")
+![Result](output_dataset/factbook_out_csv.png)
 
 
 ## Authors
