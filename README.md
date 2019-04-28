@@ -18,7 +18,7 @@ scipy
 ```
 
 
-![Result](output_dataset/factbook_out_csv.png)
+![Result](output_dataset/factbook_out_csv.png?raw=true)
 
 
 ## Authors
