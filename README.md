@@ -18,7 +18,7 @@ scipy
 ```
 
 
-![Result](output_dataset/factbook_out_csv.png?raw=true)
+![Result](https://raw.githubusercontent.com/tvo25/multi-threaded-file-merge-sort/master/output_dataset/factbook_out.csv.png)
 
 
 ## Authors
