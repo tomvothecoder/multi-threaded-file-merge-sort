@@ -1,0 +1,190 @@
+Country,Unemployment rate(%),Death rate(deaths/1000 population)
+Andorra,0.00,6.07
+Guernsey,0.50,9.95
+Aruba,0.60,6.57
+Man Isle of,0.60,11.26
+Uzbekistan,0.60,7.95
+Jersey,0.90,9.19
+Faroe Islands,1.00,8.69
+Azerbaijan,1.20,9.86
+Liechtenstein,1.30,7.06
+Thailand,1.50,7.02
+Vietnam,1.90,6.20
+Greece,10.00,10.15
+Greenland,10.00,7.77
+Turks and Caicos Islands,10.00,4.28
+France,10.10,9.08
+Bahamas The,10.20,8.97
+Spain,10.40,9.63
+Trinidad and Tobago,10.40,9.37
+Czech Republic,10.60,10.54
+Germany,10.60,10.55
+Barbados,10.70,9.17
+Israel,10.70,6.18
+Mauritius,10.80,6.83
+Egypt,10.90,5.26
+Antigua and Barbuda,11.00,5.44
+Ecuador,11.10,4.24
+Iran,11.20,5.55
+Brazil,11.50,6.15
+Philippines,11.70,5.47
+French Polynesia,11.80,4.63
+Belgium,12.00,10.22
+Puerto Rico,12.00,7.86
+Morocco,12.10,5.64
+Grenada,12.50,7.17
+Panama,12.60,6.54
+Bulgaria,12.70,14.26
+Belize,12.90,6.04
+Cote d'Ivoire,13.00,14.94
+Uruguay,13.00,9.06
+Slovakia,13.10,9.43
+Tonga,13.30,5.35
+Colombia,13.60,5.59
+Croatia,13.80,11.38
+Tunisia,13.80,5.09
+Saint Helena,14.00,6.43
+Albania,14.80,5.12
+Argentina,14.80,7.56
+Bahrain,15.00,4.08
+Guam,15.00,4.41
+Jamaica,15.00,5.37
+Jordan,15.00,2.63
+Oman,15.00,3.86
+Saint Vincent and the Grenadines,15.00,6.00
+Paraguay,15.10,4.53
+Netherlands Antilles,15.60,6.41
+Micronesia Federated States of,16.00,4.87
+Dominican Republic,17.00,7.35
+Georgia,17.00,9.09
+Suriname,17.00,7.16
+Venezuela,17.10,4.90
+Kyrgyzstan,18.00,7.13
+Lebanon,18.00,6.24
+Sudan,18.70,9.16
+New Caledonia,19.00,5.65
+Poland,19.50,10.01
+Belarus,2.00,14.15
+Gibraltar,2.00,9.18
+Kiribati,2.00,8.37
+Kuwait,2.20,2.42
+Palau,2.30,6.85
+United Arab Emirates,2.40,4.26
+Cambodia,2.50,8.97
+Cuba,2.50,7.19
+San Marino,2.60,8.07
+Qatar,2.70,4.61
+Comoros,20.00,8.40
+Ghana,20.00,10.84
+Mauritania,20.00,12.44
+Saint Lucia,20.00,5.12
+Syria,20.00,4.88
+Cape Verde,21.00,6.62
+Gabon,21.00,11.72
+Mozambique,21.00,20.99
+French Guiana,22.00,4.85
+Monaco,22.00,12.71
+Dominica,23.00,6.81
+Botswana,23.80,29.36
+Iraq,25.00,5.49
+Saudi Arabia,25.00,2.62
+Algeria,25.40,4.60
+South Africa,26.20,21.32
+Martinique,27.20,6.44
+West Bank,27.20,3.99
+Guadeloupe,27.80,6.06
+Honduras,28.50,6.87
+British Virgin Islands,3.00,4.42
+Malaysia,3.00,5.06
+Iceland,3.10,6.68
+Brunei,3.20,3.42
+Cyprus,3.20,7.64
+Mexico,3.20,4.73
+Singapore,3.40,4.16
+Switzerland,3.40,8.48
+Ukraine,3.50,16.42
+Korea South,3.60,6.26
+Armenia,30.00,8.16
+Cameroon,30.00,15.40
+Equatorial Guinea,30.00,12.00
+Libya,30.00,3.48
+Serbia and Montenegro,30.00,10.49
+Marshall Islands,30.90,4.88
+Swaziland,34.00,25.26
+Namibia,35.00,18.36
+Yemen,35.00,8.53
+Reunion,36.00,5.48
+Macedonia,37.70,8.73
+Mayotte,38.00,7.90
+Cayman Islands,4.10,4.81
+New Zealand,4.20,7.53
+Ireland,4.30,7.85
+Norway,4.30,9.45
+Austria,4.40,9.70
+Luxembourg,4.50,8.41
+Saint Kitts and Nevis,4.50,8.47
+Taiwan,4.50,6.38
+Japan,4.70,8.95
+Macau,4.70,4.23
+United Kingdom,4.80,10.18
+Bangladesh,40.00,8.40
+Kenya,40.00,14.65
+Tajikistan,40.00,8.39
+Bosnia and Herzegovina,44.00,8.44
+Lesotho,45.00,25.03
+Nepal,47.00,9.47
+Senegal,48.00,10.60
+Bermuda,5.00,7.63
+Australia,5.10,7.44
+Burma,5.20,12.15
+Mali,5.30,19.05
+United States,5.50,8.25
+Sweden,5.60,10.36
+Laos,5.70,11.83
+Hungary,5.90,13.19
+Djibouti,50.00,19.39
+East Timor,50.00,6.30
+Gaza Strip,50.00,3.87
+Zambia,50.00,20.23
+American Samoa,6.00,3.33
+Montserrat,6.00,7.17
+Netherlands,6.00,8.68
+Denmark,6.20,10.43
+El Salvador,6.30,5.85
+Romania,6.30,11.74
+Slovenia,6.40,10.22
+Portugal,6.50,10.43
+Costa Rica,6.60,4.33
+Hong Kong,6.70,5.98
+Mongolia,6.70,7.03
+Turkmenistan,60.00,8.78
+Canada,7.00,7.73
+Malta,7.00,8.00
+Guatemala,7.50,6.81
+Fiji,7.60,5.65
+Nicaragua,7.80,4.49
+Sri Lanka,7.80,6.49
+Zimbabwe,70.00,24.66
+Anguilla,8.00,5.43
+Central African Republic,8.00,20.27
+Kazakhstan,8.00,9.46
+Lithuania,8.00,10.92
+Moldova,8.00,12.79
+Pakistan,8.30,8.45
+Russia,8.30,14.52
+Chile,8.50,5.76
+Italy,8.60,10.30
+Latvia,8.80,13.70
+Finland,8.90,9.79
+Liberia,85.00,17.87
+Bolivia,9.20,7.64
+India,9.20,8.28
+Indonesia,9.20,6.25
+Turkey,9.30,5.96
+Virgin Islands,9.30,6.26
+#European Union,9.50,10.10
+Estonia,9.60,13.21
+Peru,9.60,6.26
+China,9.80,6.94
+Saint Pierre and Miquelon,9.80,6.70
+Nauru,90.00,6.82
